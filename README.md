@@ -1,7 +1,7 @@
 Unit 8: Group Milestone 
 ===
 
-# POSE SNAP
+# WORKOUT 
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -14,50 +14,71 @@ iOS apps that helps users take better selfies
 
 
 ### App Evaluation
-- **Category:** Camera Tools
+- **Category:** Fitness
 - **Mobile:** This app would be primarily developed for mobile.
-- **Story:** Users choose a silhoeutte, poses according to the sihoulette, and camera automatically snaps a self when user gets into the silhouette.
-- **Market:** Any individual who wants to take better selfies, especially solo travellers, content creators.
-- **Habit:** This app could be used as often as user takes selfies.
-- **Scope:** First we would like to make the auto capture work with 3 fixed sihouette. Later on expand to allowing users to create their own silhouette.
+- **Story:** Users can find workout buddies and log their workout stats.
+- **Market:** Any individual who wants to find accountability partners or track their workouts.
+- **Habit:** This app could be used as often as user works out.
+- **Scope:** First we would like implement the workout tracker feature, then if possible, introduce social features.
 
 ## Product Spec
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
 
-* User opens app and selects silhouette
-* Camera opens with sihouette overlay
-* Camera auto capture when user gets into silhouette
-* Photo album display of previous snaps
+* User signup and login
+* Table of last workout
+* History of all past workouts
+* Profile including goals
 
 **Optional Nice-to-have Stories**
 
-* User registration and login
-* Deletion of photos from photo album
-* Random silhouette generator
-* Countdown timer before auto capture
+* In goals page, include graphs comparing current stats vs goals
+* Progress photos and video form check
+* Social feed
+* Social map for finding gym buddies
+* Next workout recommendation
 
 ### 2. Screen Archetypes
 
-* Silhouette selection screen 
-   * Upon selecting silhouette, front camera with silhouette overlay opens
-* Camera screen 
-   * Upon entering silhoueete, camera auto captures a selfie
-* Photo album screen
-   * User is able to view selfies that were previously taken
+* Login Signup page
+   * Upon login/sign up, open home page
+* Home page
+   * Upon starting new workout, displays recommended workout 'rep count' for current workout
+* Profile page
+   * Goals, user's own progress pics, history workouts
+* Social feed
+   * Feed of friend's progress pics
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
-* Silhouette selection
-* Photo Album
+* Home
+* Profile
 
 Optional:
-* N/A
+* Social
 
 **Flow Navigation** (Screen to Screen)
-* Silhouette selected -> Opens front camera with overlay
-* Photo album selected -> Opens photo album
+* Login -> Opens home
+* Add new post -> Opens camera/album
 
 ## Wireframes
+
+User
+| Property    | Type        | Type        |
+| ----------- | ----------- | ----------- |
+| objectId    | String      |
+| Username    | String      |
+| Password    | String      |
+| goalStats   | Dictionary  |
+| trainingData| Dictionary  |
+
+Posts
+| Property    | Type        | Type        |
+| ----------- | ----------- | ----------- |
+| objectId    | String      |
+| Author    | String       |
+| image   | String      |
+| caption   | String      |
+
